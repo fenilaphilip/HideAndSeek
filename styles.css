@@ -1,0 +1,25 @@
+
+.main-heading{
+    text-decoration: underline;
+    font-size: 75px;
+    color:red;
+}
+.col-centered{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.one{
+    background-color:chartreuse;
+    text-align: center;
+    font-size: 25px;
+    height: 100px
+}
+.two{
+    background-color:yellow;
+    text-align: center;
+    font-size: 25px;
+    height: 100px
+}
+
