@@ -35,13 +35,14 @@ function is_matching_mcards(first, second) {
 
 $(document).ready(function () {
     $(".two").hide();
-    $(".mcard").click(function () {
-        toggle_mcard(this);
+    $(".one").click(function () {
+        let this_card = $(this).parent();
+        toggle_mcard(this_card);
 
         if (first === null) {
-            first = this;
+            first = this_card;
         } else if (second === null) {
-            second = this;
+            second = this_card;
             if (is_matching_mcards(first, second)) {
                 console.log("the cards are matching");
                 first = null;
@@ -52,7 +53,7 @@ $(document).ready(function () {
         } else {
             toggle_mcard(first);
             toggle_mcard(second);
-            first = this;
+            first = this_card;
             second = null;
         }
     });
